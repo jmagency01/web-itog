@@ -1,0 +1,68 @@
+{
+/*  "db" : {
+    "server":"localhost",
+    "dbname":"bishen",
+    "user":"root",
+    "pwd":""
+  },*/
+  "urls":{
+    "base":{
+      "path":"/",
+      "controller":"bishen\\Controllers\\IndexController::indexAction",
+      "method": "GET"
+    },
+  "find":{
+    "findprinters":{
+      "path":"/findprinter",
+      "controller":"bishen\\Controllers\\SearchController::findAction",
+      "method": "GET"
+    },
+    "createorder":{
+      "findTypograthy":{
+        "path":"/createorder",
+        "controller":"bishen\\Controllers\\SearchController::findAction",
+        "method": "POST"
+      },
+      "find":{
+        "findorder":{
+          "path":"/findorder",
+          "controller":"bishen\\Controllers\\SearchController::findorderAction",
+          "method": "GET"
+        },
+        "blog":{
+          "aboutprint":{
+            "path":"/aboutprint",
+            "controller":"bishen\\Controllers\\BlogController::BlogAction",
+            "method": "GET"
+          },
+            "aboutus":{
+              "path":"/aboutus",
+              "controller":"bishen\\Controllers\\BlogController::AboutusAction",
+              "method": "GET"
+            },
+
+    "registration":{
+      "path":"/account/registrationUser",
+      "controller":"bishen\\Controllers\\AccountController::registrationUAction",
+      "method": "POST"
+    },
+
+            "registrationCompany":{
+              "path":"/account/registrationCompany",
+              "controller":"bishen\\Controllers\\AccountController::registrationCAction",
+              "method": "POST"
+            },
+
+    "auth":{
+      "path":"/account/auth",
+      "controller":"bishen\\Controllers\\AccountController::authAction",
+      "method": "POST"
+    },
+    "account":{
+      "path":"/account",
+      "controller":"bishen\\Controllers\\AccountController::accountAction",
+      "method": "GET"
+    },
+
+
+}
